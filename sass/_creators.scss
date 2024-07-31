@@ -1,0 +1,97 @@
+.creators{
+    margin-top: 100px;
+    color: white;
+    .creators__title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-size: 45px;
+        }
+    }
+    .creators__wrapper{
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 100px;
+        gap: 40px;
+        .creators__item{
+            .creators__top{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    }
+    .un_creators{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        .un__creators__title{
+            display: flex;
+            flex-direction: column; 
+            gap: 20px;
+            h3{
+            color: #3D82F2;
+            }
+            p{
+                color: #707070;
+            }
+            button{
+                width: 80%;
+                background-color: transparent;
+                border: 1px solid #707070;
+                padding: 10px;
+                color: #707070;
+                font-size: 16px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+        .bottom__cr{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}
+@media (min-width: 800px) {
+    .creators{
+        .un_creators{
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            .un__creators__title{
+                h3{
+                    font-size: 20px;
+                }
+                h1{
+                    font-size: 40px;
+                }
+            }
+            .bottom__cr{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                p{
+                    width: 70%;
+                }
+                button{
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 920px) {
+    .creators{
+        .creators__wrapper{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+    }
+}

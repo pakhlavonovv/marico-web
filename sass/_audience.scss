@@ -1,0 +1,11 @@
+.top__footer{
+    margin-top: 20px;
+    img{
+        width: 100%;
+    }
+}
+@media (min-width: 650px) {
+    .top__footer{
+        margin-top: 100px;
+    }
+}

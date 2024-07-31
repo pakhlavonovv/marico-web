@@ -1,0 +1,105 @@
+.header{
+    margin-top: 20px;
+    .header__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .header__left{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            cursor: pointer;
+            h1{
+                color: white;
+                font-size: 25px;
+            }
+            img{
+                width: 10%;
+            }
+        }
+        .header__center{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            display: none;
+        }
+        .header__right{
+            display: none;
+            a{
+                color: #707070;
+            }
+        }
+        .header__res{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
+@media (min-width: 650px) {
+    .header{
+        .header__wrapper{
+            .header__left{
+                h1{
+                    font-size: 30px;
+                }
+                img{
+                    width: 20%;
+                }
+            }
+            .header__center{
+                display: flex;
+                .select{
+                    background-color: transparent;
+                    color: #707070;
+                    border: none;
+                    outline: none;
+                    font-size: 15px;
+                    transition: all 0.4s;
+                    cursor: pointer;
+                    &:hover{
+                        color: #3C82F4;
+                    }
+                }
+                li{
+                    a{
+                        color: #707070;
+                        transition: all 0.4s;
+                        &:hover{
+                            color: #3C82F4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 860px) {
+    .header{
+        .header__wrapper{
+            .header__right{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                button{
+                    width: 119px;
+                    height: 45px;
+                    background-color: #306EF7;
+                    border-radius: 5px;
+                    border: 1px solid #306EF7;
+                    color: white;
+                    font-size: 16px;
+                    transition: all ease 0.4s;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: transparent;
+                        border: 1px solid #707070;
+                    }
+                }
+            }
+            .header__res{
+                display: none;
+            }
+        }
+    }
+}
